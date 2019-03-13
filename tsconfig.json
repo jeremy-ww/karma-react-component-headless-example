@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "module": "esnext",
+    "jsx": "react",
+    "strict": true,
+    "target": "esnext",
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "noUnusedParameters": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "paths": {
+      "utils": ["./utils.ts"]
+    }
+  }
+}
