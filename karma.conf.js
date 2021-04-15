@@ -15,7 +15,7 @@ module.exports = function (config) {
     frameworks: ["jasmine"],
 
     // list of files / patterns to load in the browser
-    files: ["**/__test__/*.test.tsx"],
+    files: ["**/__tests__/*.test.tsx"],
 
     // list of files / patterns to exclude
     exclude: [],
@@ -23,7 +23,7 @@ module.exports = function (config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      "**/__test__/*.test.tsx": ["webpack"],
+      "**/__tests__/*.test.tsx": ["webpack"],
     },
 
     webpack: {
@@ -31,7 +31,7 @@ module.exports = function (config) {
       module: {
         rules: [
           {
-            test: /\.(js|ts|tsx)$/,
+            test: /\.(js|ts|jsx|tsx)$/,
             // https://github.com/webpack/webpack/issues/6544#issuecomment-368023618
             exclude: /node_modules/,
             use: "babel-loader",
@@ -39,7 +39,7 @@ module.exports = function (config) {
         ],
       },
       resolve: {
-        extensions: [".ts", ".tsx", ".js", ".json"],
+        extensions: [".ts", ".tsx", ".js", ".jsx", ".json"],
         alias: {
           utils$: require("path").resolve(__dirname, "./utils.ts"),
         },

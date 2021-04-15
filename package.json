@@ -32,6 +32,10 @@
     "webpack": "5.32.0"
   },
   "dependencies": {
+    "@ui5/webcomponents": "1.0.0-rc.14",
+    "@ui5/webcomponents-base": "0.34.0",
+    "@ui5/webcomponents-fiori": "1.0.0-rc.14",
+    "@ui5/webcomponents-react": "0.15.3",
     "core-js": "3",
     "react": "17.0.2",
     "react-dom": "17.0.2"

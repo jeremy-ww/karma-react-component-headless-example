@@ -5,6 +5,9 @@ module.exports = {
       {
         useBuiltIns: "usage",
         corejs: 3,
+        targets: {
+          esmodules: true,
+        },
       },
     ],
     "@babel/preset-typescript",
